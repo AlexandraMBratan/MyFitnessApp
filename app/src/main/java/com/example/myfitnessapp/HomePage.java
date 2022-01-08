@@ -49,6 +49,9 @@ private DrawerLayout drawer;
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 break;
+            case R.id.nav_profile:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileFragment()).commit();
+                break;
             case R.id.nav_logout:
                 logout(this);
                 break;
