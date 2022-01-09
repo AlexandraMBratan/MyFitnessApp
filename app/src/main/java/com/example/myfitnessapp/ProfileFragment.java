@@ -1,9 +1,11 @@
 package com.example.myfitnessapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,8 @@ public class ProfileFragment extends Fragment {
 
     private String userID;
 
+    private Button updateProfile;
+
     public ProfileFragment() {
 
     }
@@ -38,6 +42,15 @@ public class ProfileFragment extends Fragment {
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
+
+        updateProfile = (Button) view.findViewById(R.id.updateProfile);
+        updateProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),UpdateProfile.class);
+                startActivity(intent);
+            }
+        });
 
         userID = user.getUid();
 

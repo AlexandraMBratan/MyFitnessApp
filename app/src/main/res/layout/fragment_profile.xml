@@ -160,5 +160,16 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
             android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailProfile"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:text="Do you want to update?" />
     </RelativeLayout>
 </ScrollView>
