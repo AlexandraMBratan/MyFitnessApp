@@ -30,6 +30,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        ((HomePage)getActivity()).setActionBarTitle("Home");
+
         abs_img = (ImageButton) view.findViewById(R.id.abs);
         abs_img.setOnClickListener(this);
 
