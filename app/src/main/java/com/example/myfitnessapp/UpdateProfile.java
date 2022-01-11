@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -28,6 +29,7 @@ public class UpdateProfile extends AppCompatActivity implements View.OnClickList
     private Button updateButton;
     String user_name,user_surname,user_age,user_height,user_weight, user_gender,user_email;
     String userID;
+    //private ImageButton buttonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,11 +83,15 @@ public class UpdateProfile extends AppCompatActivity implements View.OnClickList
         updateButton = (Button) findViewById(R.id.updateButton);
         updateButton.setOnClickListener(this);
 
+     //   buttonBack = (ImageButton) findViewById(R.id.imageButtonBack);
+     //   buttonBack.setOnClickListener(this);
+
     }
 
     private void updateProfile() {
         if (isNameChanged() || isSurnameChanged() || isAgeChanged() || isHeightChanged() || isWeightChanged() || isGenderChanged() || isEmailChanged()) {
             Toast.makeText(this, "Data has been updated!", Toast.LENGTH_LONG).show();
+
         } else {
             Toast.makeText(this, "Data is the same and cannot be updated!", Toast.LENGTH_LONG).show();
 
@@ -172,10 +178,8 @@ public class UpdateProfile extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()){
-            case R.id.updateButton:
+        if(view.getId() == R.id.updateButton){
                 updateProfile();
-                break;
         }
     }
 }
