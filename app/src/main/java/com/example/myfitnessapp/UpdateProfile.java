@@ -91,6 +91,7 @@ public class UpdateProfile extends AppCompatActivity implements View.OnClickList
     private void updateProfile() {
         if (isNameChanged() || isSurnameChanged() || isAgeChanged() || isHeightChanged() || isWeightChanged() || isGenderChanged() || isEmailChanged()) {
             Toast.makeText(this, "Data has been updated!", Toast.LENGTH_LONG).show();
+
         } else {
             Toast.makeText(this, "Data is the same and cannot be updated!", Toast.LENGTH_LONG).show();
 
