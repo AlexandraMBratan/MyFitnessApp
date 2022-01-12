@@ -23,21 +23,21 @@ tools:context=".UpdateProfile">
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:text="Update Profile"
-        android:textSize="30sp"
-        />
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/updateName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
         android:layout_below="@+id/updateTitle"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#B5A1D8"
+        android:hint="Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           />
+            android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -116,7 +116,8 @@ tools:context=".UpdateProfile">
         android:layout_height="wrap_content"
         android:hint="Email"
         android:layout_below="@+id/updateGender"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#673AB7">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -133,7 +134,8 @@ tools:context=".UpdateProfile">
         android:layout_marginTop="35dp"
         android:layout_marginBottom="15dp"
         android:padding="10dp"
-        android:text="Update" />
+        android:text="Update"
+        android:backgroundTint="#673AB7"/>
 
 
 

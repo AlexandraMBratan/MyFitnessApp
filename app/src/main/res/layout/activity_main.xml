@@ -29,6 +29,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:backgroundTint="#B18CF1"
         android:ems="10"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
@@ -41,25 +42,26 @@
         android:id="@+id/password"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#B18CF1"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="24sp"
-        android:layout_marginTop="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"/>
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/signIn"
         android:layout_width="380dp"
         android:layout_height="70dp"
-        android:backgroundTint="#0ED6B9"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#673AB7"
         android:text="@string/LogIn"
         android:textColor="#FFFFFF"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
