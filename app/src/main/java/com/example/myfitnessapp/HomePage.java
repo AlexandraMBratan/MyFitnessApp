@@ -52,6 +52,9 @@ private DrawerLayout drawer;
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileFragment()).commit();
                 break;
+            case R.id.nav_workout:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new WorkoutFragment()).commit();
+                break;
             case R.id.nav_map:
                 Intent i=new Intent(HomePage.this,MapsActivity.class);
                 startActivity(i);

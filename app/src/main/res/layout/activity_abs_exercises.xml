@@ -23,7 +23,7 @@
             app:srcCompat="@drawable/abs" />
 
         <TextView
-            android:id="@+id/profileTitle"
+            android:id="@+id/absTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/absImg"
@@ -36,5 +36,33 @@
             android:textColor="@color/black"
             android:textSize="40sp" />
 
+        <TextView
+            android:id="@+id/crunches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crunches"
+            android:layout_below="@+id/absTitle"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#7459A3"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/aboutCrunches"
+            android:layout_width="185dp"
+            android:layout_height="139dp"
+            android:layout_below="@+id/crunches"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="33dp"
+            android:text="   The rectus abdominis muscle flexes to bring your shoulders towards your hips. As one of the major core muscles, it provides stability for the body. A strong back and abs are the foundation of all your daily movements as well as performance in sports. " />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="210dp"
+            android:layout_height="289dp"
+            android:layout_below="@+id/aboutCrunches"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="199dp"
+            android:layout_marginTop="-227dp"
+            android:src="@drawable/crunchgif" />
     </RelativeLayout>
 </ScrollView>
