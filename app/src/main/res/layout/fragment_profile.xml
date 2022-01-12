@@ -22,6 +22,7 @@
             android:layout_marginTop="30dp"
             android:text="Profile"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="50sp" />
 
 
@@ -31,9 +32,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/profileTitle"
             android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="35dp"
             android:text="Name: "
-            android:textSize="30sp" />
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/nameProfile"
@@ -42,7 +45,7 @@
             android:layout_below="@+id/nameTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/surnameTitle"
@@ -52,7 +55,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Surname: "
-            android:textSize="30sp" />
+            android:layout_marginLeft="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/surnameProfile"
@@ -61,8 +66,7 @@
             android:layout_below="@+id/surnameTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
-
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/ageTitle"
@@ -72,7 +76,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Age: "
-            android:textSize="30sp" />
+            android:layout_marginLeft="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/ageProfile"
@@ -81,7 +87,7 @@
             android:layout_below="@+id/ageTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/heightTitle"
@@ -91,7 +97,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Height: "
-            android:textSize="30sp" />
+            android:layout_marginStart="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/heightProfile"
@@ -100,7 +108,7 @@
             android:layout_below="@+id/heightTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
 
         <TextView
@@ -111,7 +119,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Weight: "
-            android:textSize="30sp" />
+            android:layout_marginLeft="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
 
         <TextView
@@ -121,7 +131,7 @@
             android:layout_below="@+id/weightTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/genderTitle"
@@ -131,7 +141,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Gender: "
-            android:textSize="30sp" />
+            android:layout_marginLeft="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/genderProfile"
@@ -140,7 +152,7 @@
             android:layout_below="@+id/genderTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/emailTitle"
@@ -150,7 +162,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp"
             android:text="Email: "
-            android:textSize="30sp" />
+            android:layout_marginLeft="40dp"
+            android:textColor="#7459A3"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/emailProfile"
@@ -159,17 +173,18 @@
             android:layout_below="@+id/emailTitle"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/updateProfile"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/emailProfile"
             android:layout_alignParentStart="true"
-            android:paddingBottom="10dp"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="15dp"
+            android:paddingBottom="10dp"
+            android:backgroundTint="#673AB7"
             android:text="Do you want to update?" />
     </RelativeLayout>
 </ScrollView>
