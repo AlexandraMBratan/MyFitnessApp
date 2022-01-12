@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+tools:context=".WorkoutFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/workoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="30dp"
+        android:text="Workout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/workoutMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Monday"
+        android:textColor="#7459A3"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/workoutTitle"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+android:id="@+id/mondayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutMonday"
+        app:videoId="UItWltVZZmE"
+        app:autoPlay="false"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/workoutTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Tuesday"
+        android:textAlignment="center"
+        android:textColor="#7459A3"
+        android:textSize="30sp"
+        android:layout_below="@+id/mondayVideo"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/tuesdayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutTuesday"
+        app:videoId="1f8yoFFdkcY"
+        app:autoPlay="false"
+        android:layout_marginTop="20dp"
+        />
+
+        <TextView
+            android:id="@+id/workout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="- crunch middle \n- crunch left \- crunch right \n- heel touches \n- ab hold \n- russian twist \n- lean back hold \n- slow mountain climber \n- plank"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_below="@+id/tuesdayVideo"/>
+
+
+    <TextView
+        android:id="@+id/workoutWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Wednesday"
+        android:textAlignment="center"
+        android:textColor="#7459A3"
+        android:textSize="30sp"
+        android:layout_below="@+id/workout1"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/wednesdayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutWednesday"
+        app:videoId="QPKXw8XEQiA"
+        app:autoPlay="false"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/workoutThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Thursday"
+        android:textAlignment="center"
+        android:textColor="#7459A3"
+        android:textSize="30sp"
+        android:layout_below="@+id/wednesdayVideo"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/thursdayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutThursday"
+        app:videoId="nG69wuXHwxg"
+        app:autoPlay="false"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/workoutFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Friday"
+        android:textAlignment="center"
+        android:textColor="#7459A3"
+        android:textSize="30sp"
+        android:layout_below="@+id/thursdayVideo"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/fridayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutFriday"
+        app:videoId="YZxjP14kUBc"
+        app:autoPlay="false"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>
